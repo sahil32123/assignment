@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <nav id="navbar">
+            <ul>
+                <div id="logo"><img src="/img/logo.png">
+                    <h1>ODH</h1>
+                </div>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#missionSection">Services</a></li>
+                <li><a href="/gallery.html"> Gallery</a></li>
+                <li><a href="/contactdata.html">Details</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+      <div class="main">
+        <div class="image">
+            <img class="img1" src="https://media.istockphoto.com/id/1329006104/photo/cheerful-young-housewife-holding-bucket-with-cleaning-supplies.jpg?b=1&s=170667a&w=0&k=20&c=lIbqIjYVNunYWXDfDdDr5a0S8mhXN9Ohr9xaNQDE6-Y=" alt="">
+        </div>
+        <div class="main1">
+
+            <h1>CONTACT US:</h1>
+        <div>
+        <input type="text" id="name" placeholder="Enter your username">
+        <div>
+            <input type="text" id="email"  placeholder="Enter your email">
+        </div>
+        <div>
+            <input type="text" id="phone"  placeholder="Enter your phone number">
+        </div>
+        <div>
+            <input type="text" id="requirement"  placeholder="Requirement">
+        </div>
+        <div>
+            <input type="submit" onclick=form1() value="submit">
+        </div>
+        <h1 id="p"></h1>
+        </div>
+       
+</div>
+
+
+<script>
+function form1(){
+    var name=document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+                var requirement = document.getElementById("requirement").value;
+if (!name) {
+    alert("Please Fill All the Details of Form before sumbit");
+    
+}
+else{
+    alert("Name: "+name+"\nEmail: "+ email+"\nPhone Number: "+phone+"\nRequirement:"+requirement);
+}
+}
+
+</script>
+
+ 
+</body>
+</html>
